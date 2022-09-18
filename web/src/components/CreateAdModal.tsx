@@ -86,7 +86,7 @@ export function CreateAdModal() {
           <div className="flex flex-col gap-2">
             <label htmlFor="">Seu nome (ou nickname)</label>
             <Input
-              name="game"
+              name="name"
               id="name"
               placeholder="Como te chamam dentro do jogo"
             />
@@ -125,7 +125,7 @@ export function CreateAdModal() {
               >
                 <ToogleGroup.Item
                   value="0"
-                  className={`w-8 h-8 rounded bg-zinc-900 ${
+                  className={`w-8 h-8 rounded ${
                     weekDays.includes("0") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                   title="Domingo"
@@ -134,42 +134,54 @@ export function CreateAdModal() {
                 </ToogleGroup.Item>
                 <ToogleGroup.Item
                   value="1"
-                  className="w-8 h-8 rounded bg-zinc-900"
+                  className={`w-8 h-8 rounded ${
+                    weekDays.includes("1") ? "bg-violet-500" : "bg-zinc-900"
+                  }`}
                   title="Segunda"
                 >
                   S
                 </ToogleGroup.Item>
                 <ToogleGroup.Item
                   value="2"
-                  className="w-8 h-8 rounded bg-zinc-900"
+                  className={`w-8 h-8 rounded ${
+                    weekDays.includes("2") ? "bg-violet-500" : "bg-zinc-900"
+                  }`}
                   title="Terça"
                 >
                   T
                 </ToogleGroup.Item>
                 <ToogleGroup.Item
                   value="3"
-                  className="w-8 h-8 rounded bg-zinc-900"
+                  className={`w-8 h-8 rounded ${
+                    weekDays.includes("3") ? "bg-violet-500" : "bg-zinc-900"
+                  }`}
                   title="Quarta"
                 >
                   Q
                 </ToogleGroup.Item>
                 <ToogleGroup.Item
                   value="4"
-                  className="w-8 h-8 rounded bg-zinc-900"
+                  className={`w-8 h-8 rounded ${
+                    weekDays.includes("4") ? "bg-violet-500" : "bg-zinc-900"
+                  }`}
                   title="Quinta"
                 >
                   Q
                 </ToogleGroup.Item>
                 <ToogleGroup.Item
                   value="5"
-                  className="w-8 h-8 rounded bg-zinc-900"
+                  className={`w-8 h-8 rounded ${
+                    weekDays.includes("5") ? "bg-violet-500" : "bg-zinc-900"
+                  }`}
                   title="Sexta"
                 >
                   S
                 </ToogleGroup.Item>
                 <ToogleGroup.Item
                   value="6"
-                  className="w-8 h-8 rounded bg-zinc-900"
+                  className={`w-8 h-8 rounded ${
+                    weekDays.includes("6") ? "bg-violet-500" : "bg-zinc-900"
+                  }`}
                   title="Sábado"
                 >
                   S
